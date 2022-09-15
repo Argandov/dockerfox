@@ -1,10 +1,13 @@
 ### This Dockerfile
 
+Note: This doesn't seem to work anymore. Haven't had time to update
+
 - By default everything will be ran as root. We create a new user 'user' and then, after updating repositories and installing Firefox, we execute everything as 'user'
 - Generate HASH password with command `mkpasswd -p sha-512 (password)`
 - Create a bashrc profile and drop it in the docker build folder
+- This doesn't work on MacOS
 
-### Running it (Tested on Ubuntu):
+### Running it (Tested on Debian & Ubuntu):
 
 `xhost +`
 
